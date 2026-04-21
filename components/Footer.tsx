@@ -14,14 +14,14 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <Image src="/logo.png" alt="OLT" width={32} height={32} className="rounded" />
-            <span className="text-white font-bold text-sm">OLT <span className="text-accent">Spanish Leads</span></span>
+            <span className="text-white font-bold text-sm">OLT <span className="text-sky-400">Spanish Leads</span></span>
           </div>
 
           <div className="flex items-center gap-6 text-white/30 text-sm">
-            <a href="#como-funciona" className="hover:text-accent transition-colors">Cómo Funciona</a>
-            <a href="#precios" className="hover:text-accent transition-colors">Precios</a>
-            <a href="#faq" className="hover:text-accent transition-colors">FAQ</a>
-            <a href="#contacto" className="hover:text-accent transition-colors">Contacto</a>
+            <a href="#how-it-works" className="hover:text-sky-400 transition-colors">How It Works</a>
+            <a href="#pricing" className="hover:text-sky-400 transition-colors">Pricing</a>
+            <a href="#faq" className="hover:text-sky-400 transition-colors">FAQ</a>
+            <a href="#contact" className="hover:text-sky-400 transition-colors">Contact</a>
           </div>
 
           <div className="text-white/20 text-xs">

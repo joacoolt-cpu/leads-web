@@ -8,9 +8,9 @@ export default function Hero() {
     <section className="relative min-h-screen gradient-bg overflow-hidden flex items-center">
       {/* Animated blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" style={{ animation: "float 6s ease-in-out infinite" }} />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-sky-400/10 rounded-full blur-3xl" style={{ animation: "float 6s ease-in-out infinite" }} />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/8 rounded-full blur-3xl" style={{ animation: "float 8s ease-in-out infinite 2s" }} />
-        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-accent/5 rounded-full blur-3xl" style={{ animation: "float 7s ease-in-out infinite 4s" }} />
+        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-sky-300/5 rounded-full blur-3xl" style={{ animation: "float 7s ease-in-out infinite 4s" }} />
         {/* Grid */}
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
       </div>
@@ -22,7 +22,7 @@ export default function Hero() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span className="text-white/90 text-sm font-medium">Leads en Español para Real Estate</span>
+                <span className="text-white/90 text-sm font-medium">Spanish Leads for Real Estate</span>
               </div>
             </motion.div>
 
@@ -32,9 +32,9 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
             >
-              Leads Hispanos<br />
-              <span className="gradient-text">Calificados</span><br />
-              Para Tu Negocio
+              Qualified Hispanic<br />
+              <span className="gradient-text">Leads</span><br />
+              For Your Business
             </motion.h1>
 
             <motion.p
@@ -43,7 +43,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="text-lg md:text-xl text-white/60 mb-8 max-w-xl leading-relaxed"
             >
-              Solo pagas por leads verificados con intención real de compra. Sin mensualidades. Sin riesgo. Cada lead llega calificado por IA y listo para agendar.
+              Only pay for verified leads with real purchase intent. No monthly fees. No risk. Each lead arrives AI-qualified and ready to schedule.
             </motion.p>
 
             <motion.div
@@ -52,11 +52,11 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.45 }}
               className="flex flex-col sm:flex-row gap-4 mb-12"
             >
-              <a href="#contacto" className="group bg-accent hover:bg-accent-500 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:shadow-2xl hover:shadow-accent/40 text-center shimmer">
-                Agendar Llamada Gratis
+              <a href="#contact" className="group bg-accent hover:bg-accent-600 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:shadow-2xl hover:shadow-accent/40 text-center shimmer">
+                Book a Free Call
               </a>
-              <a href="#como-funciona" className="group flex items-center justify-center gap-2 text-white/70 hover:text-white px-8 py-4 rounded-full border border-white/20 hover:border-white/40 transition-all duration-300 text-center">
-                Ver Cómo Funciona
+              <a href="#how-it-works" className="group flex items-center justify-center gap-2 text-white/70 hover:text-white px-8 py-4 rounded-full border border-white/20 hover:border-white/40 transition-all duration-300 text-center">
+                See How It Works
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </a>
             </motion.div>
@@ -69,12 +69,12 @@ export default function Hero() {
               className="grid grid-cols-3 gap-6"
             >
               {[
-                { value: 70, suffix: "%", label: "de hispanos prefieren español" },
-                { value: 85, suffix: "%", label: "tasa de contacto exitoso" },
-                { value: 5, prefix: "<", suffix: " min", label: "respuesta con IA" },
+                { value: 70, suffix: "%", label: "of Hispanics prefer Spanish" },
+                { value: 85, suffix: "%", label: "successful contact rate" },
+                { value: 5, prefix: "<", suffix: " min", label: "AI response time" },
               ].map((s, i) => (
                 <div key={i} className="text-center md:text-left">
-                  <div className="text-2xl md:text-3xl font-bold text-accent">
+                  <div className="text-2xl md:text-3xl font-bold text-sky-400">
                     <CountUp end={s.value} suffix={s.suffix} prefix={s.prefix} />
                   </div>
                   <div className="text-white/40 text-xs md:text-sm mt-1">{s.label}</div>
@@ -95,20 +95,20 @@ export default function Hero() {
               <div className="relative bg-white/10 backdrop-blur-xl border border-white/15 rounded-2xl p-6 shadow-2xl">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
-                  <span className="text-green-400 text-sm font-semibold">Lead Calificado — Ahora</span>
+                  <span className="text-green-400 text-sm font-semibold">Qualified Lead — Now</span>
                 </div>
                 <div className="flex items-center gap-3 mb-5">
-                  <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center text-accent font-bold text-lg">RF</div>
+                  <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center text-sky-400 font-bold text-lg">RF</div>
                   <div>
-                    <div className="text-white font-semibold">Roberto Fernández</div>
+                    <div className="text-white font-semibold">Roberto Fernandez</div>
                     <div className="text-white/40 text-sm">Orlando, FL</div>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-2 mb-4">
                   {[
-                    { label: "Presupuesto", value: "$300K–400K" },
-                    { label: "Plazo", value: "2–3 meses" },
-                    { label: "Tipo", value: "Primera vivienda" },
+                    { label: "Budget", value: "$300K–400K" },
+                    { label: "Timeline", value: "2–3 months" },
+                    { label: "Type", value: "First home" },
                     { label: "Score", value: "92/100" },
                   ].map((f, i) => (
                     <div key={i} className="bg-white/5 rounded-lg p-2.5 border border-white/10">
@@ -118,8 +118,8 @@ export default function Hero() {
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <span className="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-xs font-medium border border-green-500/30">Pre-aprobado</span>
-                  <span className="px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-medium border border-accent/30">Listo para agendar</span>
+                  <span className="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-xs font-medium border border-green-500/30">Pre-approved</span>
+                  <span className="px-3 py-1 rounded-full bg-sky-500/20 text-sky-400 text-xs font-medium border border-sky-500/30">Ready to schedule</span>
                 </div>
               </div>
 
@@ -133,8 +133,8 @@ export default function Hero() {
                   <svg className="w-4 h-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                 </div>
                 <div>
-                  <div className="text-navy text-xs font-semibold">Lead Verificado</div>
-                  <div className="text-navy/40 text-[10px]">hace 2 min</div>
+                  <div className="text-navy text-xs font-semibold">Verified Lead</div>
+                  <div className="text-navy/40 text-[10px]">2 min ago</div>
                 </div>
               </motion.div>
 
@@ -144,7 +144,7 @@ export default function Hero() {
                 className="absolute -top-4 -right-4 bg-accent rounded-xl shadow-xl p-3"
               >
                 <div className="text-white text-xs font-bold">Score: 92</div>
-                <div className="text-white/60 text-[10px]">Alta intención</div>
+                <div className="text-white/60 text-[10px]">High intent</div>
               </motion.div>
             </div>
           </motion.div>

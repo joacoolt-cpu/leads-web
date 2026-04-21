@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "OLT Spanish Leads | Leads Hispanos Calificados para Real Estate",
+  title: "OLT Spanish Leads | Qualified Hispanic Leads for Real Estate",
   description:
-    "Generamos leads hispanos calificados para agentes de bienes raíces en EE.UU. Solo pagas por leads verificados con intención real de compra.",
+    "We generate qualified Hispanic leads for real estate agents in the U.S. Only pay for verified leads with real purchase intent.",
   keywords:
-    "leads hispanos, real estate leads, leads en español, bienes raíces, agente inmobiliario, leads calificados",
+    "Hispanic leads, real estate leads, Spanish leads, real estate, real estate agent, qualified leads",
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth bg-white">
       <body className="antialiased">{children}</body>
     </html>
   );

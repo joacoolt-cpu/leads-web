@@ -15,9 +15,9 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { label: "Cómo Funciona", href: "#como-funciona" },
-    { label: "Ejemplo", href: "#lead-card" },
-    { label: "Precios", href: "#precios" },
+    { label: "How It Works", href: "#how-it-works" },
+    { label: "Example", href: "#lead-card" },
+    { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ];
 
@@ -36,7 +36,7 @@ export default function Navbar() {
         <a href="#" className="flex items-center gap-3">
           <Image src="/logo.png" alt="OLT Spanish Leads" width={40} height={40} className="rounded" />
           <span className="text-white font-bold text-lg tracking-tight hidden sm:block">
-            OLT <span className="text-accent">Spanish Leads</span>
+            OLT <span className="text-sky-400">Spanish Leads</span>
           </span>
         </a>
 
@@ -45,16 +45,16 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-white/70 hover:text-accent transition-colors duration-300 text-sm font-medium"
+              className="text-white/70 hover:text-sky-400 transition-colors duration-300 text-sm font-medium"
             >
               {link.label}
             </a>
           ))}
           <a
-            href="#contacto"
-            className="bg-accent hover:bg-accent-500 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-accent/30 shimmer"
+            href="#contact"
+            className="bg-accent hover:bg-accent-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-accent/30 shimmer"
           >
-            Agendar Llamada
+            Book a Call
           </a>
         </div>
 
@@ -80,12 +80,12 @@ export default function Navbar() {
           >
             <div className="px-6 py-4 space-y-3">
               {links.map((link) => (
-                <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block text-white/70 hover:text-accent py-2 text-sm font-medium">
+                <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block text-white/70 hover:text-sky-400 py-2 text-sm font-medium">
                   {link.label}
                 </a>
               ))}
-              <a href="#contacto" onClick={() => setMenuOpen(false)} className="block bg-accent text-white text-center px-6 py-2.5 rounded-full text-sm font-semibold mt-3">
-                Agendar Llamada
+              <a href="#contact" onClick={() => setMenuOpen(false)} className="block bg-accent text-white text-center px-6 py-2.5 rounded-full text-sm font-semibold mt-3">
+                Book a Call
               </a>
             </div>
           </motion.div>

@@ -5,13 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 
 const faqs = [
-  { q: "¿Qué es un 'lead calificado'?", a: "Un lead calificado cumple 6 criterios verificados por nuestra IA: intención de compra confirmada, área geográfica definida, presupuesto claro, plazo de compra, contacto válido (teléfono + nombre), y opt-in confirmado. Si no cumple todos, no te lo enviamos ni te lo cobramos." },
-  { q: "¿Quién paga los anuncios de Meta?", a: "Vos pagás directamente a Meta desde tu propia cuenta de Business Manager. Nosotros gestionamos las campañas usando Partner Access (sin compartir contraseñas). Recomendamos un mínimo de $500/mes." },
-  { q: "¿Necesito experiencia con Meta Ads?", a: "No. Nosotros manejamos todo: estrategia, creativos, copy en español, formularios y optimización. Solo necesitás darnos acceso como Partners a tu cuenta de Meta." },
-  { q: "¿Cómo recibo los leads?", a: "Cada lead calificado se entrega en tiempo real por email con ficha completa + tu dashboard de Google Sheets donde podés ver todos tus leads con score, datos y estado." },
-  { q: "¿Cuántos leads puedo esperar por mes?", a: "Con $500 de ad spend, típicamente se generan entre 8-15 leads calificados al mes, dependiendo de tu zona y competencia. Podés escalar aumentando tu presupuesto." },
-  { q: "¿Hay contrato a largo plazo?", a: "No. El setup de $500 es único y el modelo pay-per-lead no tiene contrato mínimo. Si querés pausar o cancelar, simplemente pausás tus anuncios." },
-  { q: "¿En qué zonas operan?", a: "En todo Estados Unidos, enfocándonos en mercados con alta población hispana: Florida, Texas, California, Arizona, Nevada, Carolina del Norte, Georgia, y más." },
+  { q: "What is a 'qualified lead'?", a: "A qualified lead meets 6 criteria verified by our AI: confirmed purchase intent, defined geographic area, clear budget, purchase timeline, valid contact (phone + name), and confirmed opt-in. If they don't meet all criteria, we don't send them to you or charge you." },
+  { q: "Who pays for the Meta ads?", a: "You pay Meta directly from your own Business Manager account. We manage the campaigns using Partner Access (no password sharing). We recommend a minimum of $500/month." },
+  { q: "Do I need experience with Meta Ads?", a: "No. We handle everything: strategy, creatives, Spanish copy, forms, and optimization. You just need to give us Partner access to your Meta account." },
+  { q: "How do I receive the leads?", a: "Each qualified lead is delivered in real-time via email with a complete profile + your Google Sheets dashboard where you can see all your leads with score, data, and status." },
+  { q: "How many leads can I expect per month?", a: "With $500 in ad spend, you typically get 8-15 qualified leads per month, depending on your area and competition. You can scale by increasing your budget." },
+  { q: "Is there a long-term contract?", a: "No. The $500 setup is one-time and the pay-per-lead model has no minimum contract. If you want to pause or cancel, just pause your ads." },
+  { q: "What areas do you cover?", a: "All across the United States, focusing on markets with high Hispanic populations: Florida, Texas, California, Arizona, Nevada, North Carolina, Georgia, and more." },
 ];
 
 export default function FAQ() {
@@ -21,8 +21,8 @@ export default function FAQ() {
     <section id="faq" className="py-24 bg-slate-50 relative">
       <div className="max-w-3xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
-          <span className="inline-block bg-navy/10 text-navy text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Preguntas Frecuentes</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-navy">Todo Lo Que Necesitás Saber</h2>
+          <span className="inline-block bg-navy/10 text-navy text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Frequently Asked Questions</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-black">Everything You Need To Know</h2>
         </AnimatedSection>
 
         <div className="space-y-3">
@@ -30,7 +30,7 @@ export default function FAQ() {
             <AnimatedSection key={i} delay={i * 60} direction="up">
               <div className={`bg-white rounded-xl border transition-all duration-300 ${open === i ? "border-accent/30 shadow-lg shadow-accent/5" : "border-gray-100 hover:border-gray-200"}`}>
                 <button className="w-full flex items-center justify-between p-5 text-left" onClick={() => setOpen(open === i ? null : i)}>
-                  <span className={`font-semibold pr-4 transition-colors ${open === i ? "text-accent" : "text-navy"}`}>
+                  <span className={`font-semibold pr-4 transition-colors ${open === i ? "text-accent" : "text-black"}`}>
                     {faq.q}
                   </span>
                   <motion.div

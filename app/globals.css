@@ -5,9 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --navy: #1B2A4A;
-  --accent: #F27A1A;
-  --light: #E8F0FE;
+  --navy: #1B3A5F;
+  --accent: #2E86DE;
+  --sky: #54A0FF;
+  --light: #E8F4FC;
 }
 
 * {
@@ -22,7 +23,7 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  color: #1B2A4A;
+  color: #1B3A5F;
   overflow-x: hidden;
 }
 
@@ -33,19 +34,19 @@ body {
   background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1B2A4A;
+  background: #1B3A5F;
   border-radius: 3px;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #F27A1A 0%, #FF9F43 100%);
+  background: linear-gradient(135deg, #2E86DE 0%, #54A0FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-bg {
-  background: linear-gradient(-45deg, #0f1a30, #1B2A4A, #243656, #1B2A4A);
+  background: linear-gradient(-45deg, #0f1a30, #1B3A5F, #1E4A7A, #1B3A5F);
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
 }

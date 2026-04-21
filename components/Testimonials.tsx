@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 
 const stats = [
-  { value: "4x–8x", label: "ROI promedio por cliente" },
-  { value: "< 5 min", label: "Tiempo de respuesta de IA" },
-  { value: "92%", label: "Tasa de contacto exitoso" },
-  { value: "$75–125", label: "Costo por lead calificado" },
+  { value: "4x–8x", label: "Average client ROI" },
+  { value: "< 5 min", label: "AI response time" },
+  { value: "92%", label: "Successful contact rate" },
+  { value: "$75–125", label: "Cost per qualified lead" },
 ];
 
 export default function Testimonials() {
@@ -15,9 +15,9 @@ export default function Testimonials() {
     <section className="py-20 bg-white relative">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="text-center mb-12">
-          <span className="inline-block bg-accent/10 text-accent text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Números Reales</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-navy">
-            Resultados Que <span className="gradient-text">Hablan</span>
+          <span className="inline-block bg-accent/10 text-accent text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Real Numbers</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-black">
+            Results That <span className="gradient-text">Speak</span>
           </h2>
         </AnimatedSection>
 
